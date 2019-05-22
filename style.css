@@ -1,12 +1,12 @@
 * {
   box-sizing: border-box;
+  font-family: 'Kodchasan',
+  sans-serif;
 }
 
 body {
-  font-family: Calibri,
-  sans-serif;
   font-size: 20px;
-  color: #444;
+  color: #004080;
   line-height: 1.5;
   margin: 0px;
 }
@@ -14,8 +14,11 @@ body {
 nav {
   height: 40px;
   position: fixed;
-  background-color: lightgrey;
   width: 100%;
+  color: #800080;
+  font-weight: bold;
+  border-bottom: 1px solid #800080;
+  background-color: #e4e4e4;
 }
 
 nav ul {
@@ -44,6 +47,10 @@ nav a {
   padding: 10px;
 }
 
+.scroll {
+  color: #800080;
+}
+
 header {
   padding-top: 30px;
   padding-left: 10px;
@@ -59,13 +66,17 @@ header {
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
-  background-color: #bbb;
+  border-top: 2px solid #800080;
+  border-bottom: 2px solid #800080;
+  color: #004080;
+  background-color: #e4e4e4;
 }
 
-.quizAppImage {
-  width: 200px;
-  height: 200px;
-  background-color: white;
+
+
+img {
+  width: 350px;
+  height: 350px;
   display: block;
   margin: auto;
 }
@@ -76,6 +87,62 @@ header {
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
-  background-color: white;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
  }
+
+button {
+  background-color: teal;
+  color: lightgrey;
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+  font-size: 20px;
+  padding: 10px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #800080;
+  text-align: left;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  border-top: 1px solid #800080;
+  background-color: #e4e4e4;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+}
+
+footer ul li {
+  display: inline-block;
+  font-size: 18px;
+}
+
+footer .left {
+  padding-left: 10px;
+}
+
+footer .right {
+  float: right;
+  padding-right: 10px;
+}
+
+.footerLink {
+  color: #800080;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  img {
+    width: 250px;
+    height: 250px;
+    }
+}

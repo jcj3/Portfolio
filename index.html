@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
     <title>Web Dev Jen</title>
       <meta name="description" content="A collection of web development projects">
-      <link href="https://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <nav role="navigation">
       <ul>
         <li class="left">Jen Johnson</li>
-        <li class="right">Projects</li>
-        <li class="right">Bio</li>
+        <li class="right"><a class="scroll" href="#bioSection">Bio</a></li>
+        <li class="right"><a class="scroll" href="#projectSection">Projects</a></li>
       </ul>
     </nav>
     <main role="main">
@@ -21,27 +22,37 @@
         <h1>Hi, my name is Jen!</h1>
         <p>I'm an aspiring web developer located in Milwaukee, WI with a passion for organizing content logically and clearly in order to improve communication and user experience.</p>
       </header>
+      <div id="projectSection">
       <section class="projects">
         <h2>Projects</h2>
         <h3>Beer Quiz</h3>
-        <div class="quizAppImage"></div>
+        <div class="quizAppImage">
+          <img src="https://i.imgur.com/L8JTxju.png" alt="perspiring beer glasses">
+        </div>
         <h4>Technologies</h4>
-          <p>HTML5</p>
-          <p>CSS3</p>
-          <p>JS</p>
+          <p>HTML5, CSS3, JavaScript</p>
         <h4>Description</h4>
-        <p>The Beer Quiz is an app that tests your knowledge of relatively common beer trivia.</p>
-        <button type="button">View Project</button>
-        <button type="button">View Code</button>
+        <p>The Beer Quiz is an app developed as part of the Thinkful Full Stack certification program that tests your knowledge of relatively common beer trivia.</p>
+        <button type="button" onclick="window.open('https://jcj3.github.io/quizApp/')">View Project</button>
+        <button type="button" onclick="window.open('https://github.com/jcj3/quizApp/tree/master')">View Code</button>
       </section>
+      </div>
+      <div id="bioSection">
       <section class="bio">
         <h2>Bio</h2>
         <p>I’m passionate about web development because I’m nerdy enough to find it fun. Few things are more satisfying to me than watching the pieces of a puzzle come together through code. As a tech writer, I learned the importance of clearly organizing content to ensure a positive user experience. As a web developer, I’ve learned how to make well-organized content look good and function correctly, too.</p>
-        <p>Aspiring web developer by day</p>
-        <p>Runner and consumer of beer by night</p>
-        <p>Humor enthusiast always</p>
-        <button type="contact">Email Me!</button>
-      </section>
+        <p>Aspiring web developer by day.</p>
+        <p>Runner and consumer of beer by night.</p>
+        <p>Humor enthusiast always.</p>
+        </section>
+        </div>
+        <footer role="footer">
+          <ul>
+            <li class="left"><a class="footerLink" href="mailto:jen.c.johnson@gmail.com?subject=Let's Connect!">Email Me!</a></li>
+            <li class="right"><a class="footerLink" href="https://github.com/jcj3" target="_blank">GitHub</a></li>
+            <li class="right"><a class="footerLink" href="http://www.linkedin.com/in/jcj387" target="_blank">LinkedIn</a></li>
+          </ul>
+        </footer>
     </main>
   </body>
-</htm>
+</html>
